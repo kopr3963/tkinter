@@ -1,7 +1,5 @@
 
-
-
-m Tkinter import *
+from Tkinter import *
 from library import *
 import cv2
 from PIL import Image
