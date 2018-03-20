@@ -1,5 +1,10 @@
 # testssss
-from Tkinter import *
+try :
+	from Tkinter import *
+except ImportError:
+	from tkinter import *
+else : 
+	print ('ImportError');
 from library import *
 import cv2
 from PIL import Image
