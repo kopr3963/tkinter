@@ -1,7 +1,7 @@
-# testssss
-#aa......
+#webcam.py
 
-#ii
+# __author__ = 'kim';
+
 try :
 	from Tkinter import *
 except ImportError:
@@ -52,7 +52,7 @@ cap.set(cv2.CAP_PROP_FPS,60);
 #cap2 = cv2.VideoCapture(1);
 #cap2.set(cv2.CAP_PROP_FPS,60);
 def hello():
-    print "hello!"
+    print ("hello!")
 
 def show_frame():
 	_, frame = cap.read()

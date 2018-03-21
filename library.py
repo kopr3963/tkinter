@@ -1,5 +1,11 @@
 #library.py
-from Tkinter import Menu
+try :
+	from Tkinter import *
+except ImportError :
+	from tkinter import *
+else :
+	print("ImportError");
+
 print('a');
 
 
