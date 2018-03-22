@@ -1,7 +1,33 @@
 #webcam.py
-
 # __author__ = 'kim';
+import os;
+import subprocess
+from sys import platform
+os = "";
+if platform == "linux" or platform == "linux2":
+    # linux
+	os = "linux";
+	pass;
 
+elif platform == "darwin":
+    # OS X
+	os = "osx";
+	pass;
+elif platform == "win32":
+    # Windows...
+	os = "window";
+	pass;
+
+print(os);
+# output = commands.getoutput('v4l2-ctl -d /dev/video9 --list-c    trls');
+V4L2 = False;
+
+def cam():
+	# output = commands.getoutput('v4l2-ctl -d /dev/video9 --list-c    trls');
+	# output = subprocess.check_output('v4l2-ctl -d /dev/video9 --l    ist-ctrls', shell=True);
+	# return output;
+	pass;
+cam();
 try :
 	from Tkinter import *
 except ImportError:
