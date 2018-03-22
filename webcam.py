@@ -12,6 +12,7 @@ from library import *
 import cv2
 from PIL import Image
 from PIL import ImageTk
+
 root = Tk()
 print ( Image.__file__);
 w = root.winfo_screenwidth();
@@ -19,7 +20,7 @@ h = root.winfo_screenheight();
 
 root.title('webcam');
 root.geometry('{}x{}'.format(w, h));
-
+root.resizable(width=False, height=False)
 settings_Menu(root);
 #w = w/2;
 
