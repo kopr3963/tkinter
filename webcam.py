@@ -3,31 +3,32 @@
 import os;
 import subprocess
 from sys import platform
-os = "";
+os_ = "";
 if platform == "linux" or platform == "linux2":
     # linux
-	os = "linux";
+	os_ = "linux";
 	pass;
 
 elif platform == "darwin":
     # OS X
-	os = "osx";
+	os_ = "osx";
 	pass;
 elif platform == "win32":
     # Windows...
-	os = "window";
+	os_ = "window";
 	pass;
 
-print(os);
+print(os_);
 # output = commands.getoutput('v4l2-ctl -d /dev/video9 --list-c    trls');
 V4L2 = False;
 
 def cam():
 	# output = commands.getoutput('v4l2-ctl -d /dev/video9 --list-c    trls');
-	# output = subprocess.check_output('v4l2-ctl -d /dev/video9 --l    ist-ctrls', shell=True);
-	# return output;
+	output = subprocess.check_output('v4l2-ctl -d /dev/video9 --l    ist-ctrls', shell=True);
+	return output;
 	pass;
-cam();
+c = cam();
+print (c);
 try :
 	from Tkinter import *
 except ImportError:
