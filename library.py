@@ -10,16 +10,16 @@ else :
 	print("ImportError");
 
 def __init__():
-	print('init');
+	# print('init');
 
 def test() : 
-	print('test');
+	# print('test');
 
 def hello():
-	print ("hi");
+	# print ("hi");
 
 st = command = commands.getstatusoutput('v4l2-ctl -d /dev/video0 --list-ctrls');
-print ( st);
+# print ( st);
 st = st[1];
 st = st.strip();
 st = st.replace(" ","");
@@ -35,11 +35,11 @@ def t (list):
 
 	pass;
 result = t(out);
-print ( result )
+# print ( result )
 
 
 def settings_Menu(self):
-	print('library.py  settings_menu()' );
+	# print('library.py  settings_menu()' );
 	self.menubar = Menu(self);
 	self.menubar.add_command(label="Hello!", command=hello)
 	self.menubar.add_command(label="Quit!", command=self.quit)

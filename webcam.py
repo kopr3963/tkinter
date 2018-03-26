@@ -28,7 +28,7 @@ def cam():
 	# return output;
 	pass;
 c = cam();
-print (c);
+# print (c);
 try :
 	from Tkinter import *
 except ImportError:
@@ -40,6 +40,7 @@ import cv2
 from PIL import Image
 from PIL import ImageTk
 
+print ( result);
 root = Tk()
 print ( Image.__file__);
 w = root.winfo_screenwidth();
