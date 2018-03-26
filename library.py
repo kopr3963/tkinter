@@ -11,13 +11,13 @@ else :
 
 def __init__():
 	# print('init');
-
+	pass;
 def test() : 
 	# print('test');
-
+	pass;
 def hello():
 	# print ("hi");
-
+	pass;
 st = command = commands.getstatusoutput('v4l2-ctl -d /dev/video0 --list-ctrls');
 # print ( st);
 st = st[1];
